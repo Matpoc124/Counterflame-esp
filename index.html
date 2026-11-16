@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090812">
+  <meta name="description" content="CounterFlame ESP — демонстрационная тренировочная арена">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>CounterFlame ESP</title>
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="brand"><span class="logo">CF</span><div><b>COUNTERFLAME</b><small>TRAINING LAB</small></div></div>
+      <span class="status"><i></i> DEMO MODE</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">MOBILE TRAINING TOOL</p>
+      <h1>ESP <span>LAB</span></h1>
+      <p class="sub">Демонстрационная арена с условными целями. Не подключается к CounterFlame.</p>
+    </section>
+
+    <section class="arena-card">
+      <div class="arena-head"><b>TRAINING ARENA</b><span>ROUND 01</span></div>
+      <div class="arena" id="arena">
+        <div class="grid-lines"></div>
+        <div class="target t1"><span class="boxmark"></span><b>BOT-01</b><small>12 m</small></div>
+        <div class="target t2"><span class="boxmark"></span><b>BOT-02</b><small>24 m</small></div>
+        <div class="target t3"><span class="boxmark"></span><b>BOT-03</b><small>31 m</small></div>
+        <div class="crosshair">+</div>
+        <div class="arena-caption">SIMULATED TARGETS</div>
+      </div>
+      <div class="legend"><span><i class="pink"></i> BOT-01</span><span><i class="blue"></i> BOT-02</span><span><i class="green"></i> BOT-03</span></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title"><div><p class="eyebrow">CONFIGURATION</p><h2>Настройки ESP</h2></div><span class="pill">LOCAL</span></div>
+      <label class="setting"><span><b>Показать рамки</b><small>Отображение целей на демо-арене</small></span><input id="boxesToggle" type="checkbox" checked><i class="switch"></i></label>
+      <label class="setting"><span><b>Подписи целей</b><small>Имена условных ботов</small></span><input id="namesToggle" type="checkbox" checked><i class="switch"></i></label>
+      <label class="setting"><span><b>Дистанция</b><small>Условное расстояние до целей</small></span><input id="distanceToggle" type="checkbox" checked><i class="switch"></i></label>
+      <div class="color-row"><div><b>Цвет рамок</b><small>Выбери цвет для демо</small></div><div class="swatches"><button class="swatch active" data-color="#ff4d9d" aria-label="Розовый"></button><button class="swatch" data-color="#55a7ff" aria-label="Синий"></button><button class="swatch" data-color="#62e6a7" aria-label="Зелёный"></button></div></div>
+    </section>
+
+    <footer><span>COUNTERFLAME ESP LAB</span><span>v1.0 · DEMO</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
