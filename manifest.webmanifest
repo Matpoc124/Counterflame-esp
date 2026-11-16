@@ -2,8 +2,23 @@
   "name": "CounterFlame ESP Lab",
   "short_name": "CF ESP Lab",
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#090812",
   "theme_color": "#090812",
-  "description": "Демонстрационная тренировочная арена"
+  "description": "Демонстрационная тренировочная арена",
+  "icons": [
+    {
+      "src": "./icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }
